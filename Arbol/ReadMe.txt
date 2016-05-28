@@ -1,0 +1,1 @@
+Crea un txt con a representacion de todos los archivos y subdirectorios del directorio actual

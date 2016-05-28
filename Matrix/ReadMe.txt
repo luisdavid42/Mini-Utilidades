@@ -1,0 +1,1 @@
+Abre la consolita y tira numeros random para asustar al usuario

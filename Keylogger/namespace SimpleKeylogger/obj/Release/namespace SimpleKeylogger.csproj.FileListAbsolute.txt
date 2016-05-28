@@ -1,0 +1,6 @@
+C:\Users\Liu\Documents\Visual Studio 2015\Projects\namespace SimpleKeylogger\namespace SimpleKeylogger\obj\Release\namespace SimpleKeylogger.csprojResolveAssemblyReference.cache
+C:\Users\Liu\Documents\Visual Studio 2015\Projects\namespace SimpleKeylogger\namespace SimpleKeylogger\bin\Release\Cthulhu.exe.config
+C:\Users\Liu\Documents\Visual Studio 2015\Projects\namespace SimpleKeylogger\namespace SimpleKeylogger\bin\Release\Cthulhu.exe
+C:\Users\Liu\Documents\Visual Studio 2015\Projects\namespace SimpleKeylogger\namespace SimpleKeylogger\bin\Release\Cthulhu.pdb
+C:\Users\Liu\Documents\Visual Studio 2015\Projects\namespace SimpleKeylogger\namespace SimpleKeylogger\obj\Release\Cthulhu.exe
+C:\Users\Liu\Documents\Visual Studio 2015\Projects\namespace SimpleKeylogger\namespace SimpleKeylogger\obj\Release\Cthulhu.pdb
