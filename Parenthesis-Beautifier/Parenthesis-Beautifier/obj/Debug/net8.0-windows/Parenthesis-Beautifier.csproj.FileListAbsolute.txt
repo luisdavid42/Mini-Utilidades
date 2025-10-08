@@ -1,0 +1,17 @@
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\bin\Debug\net8.0-windows\Parenthesis-Beautifier.exe
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\bin\Debug\net8.0-windows\Parenthesis-Beautifier.deps.json
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\bin\Debug\net8.0-windows\Parenthesis-Beautifier.runtimeconfig.json
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\bin\Debug\net8.0-windows\Parenthesis-Beautifier.dll
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\bin\Debug\net8.0-windows\Parenthesis-Beautifier.pdb
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.csproj.GenerateResource.cache
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.AssemblyInfoInputs.cache
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.AssemblyInfo.cs
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.csproj.CoreCompileInputs.cache
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.sourcelink.json
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.dll
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\refint\Parenthesis-Beautifier.dll
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.pdb
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis-Beautifier.genruntimeconfig.cache
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\ref\Parenthesis-Beautifier.dll
+C:\Users\Liu\Documents\GitHub\Mini-Utilidades\Parenthesis-Beautifier\Parenthesis-Beautifier\obj\Debug\net8.0-windows\Parenthesis_Beautifier.VentanaPrincipal.resources

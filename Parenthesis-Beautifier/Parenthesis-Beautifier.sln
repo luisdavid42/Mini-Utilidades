@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parenthesis-Beautifier", "Parenthesis-Beautifier\Parenthesis-Beautifier.csproj", "{F6FE5042-16CB-441C-BD29-AC6381EA9999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{35E75346-D5E6-44DD-92C4-14E50EF259D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6FE5042-16CB-441C-BD29-AC6381EA9999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FE5042-16CB-441C-BD29-AC6381EA9999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FE5042-16CB-441C-BD29-AC6381EA9999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FE5042-16CB-441C-BD29-AC6381EA9999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E75346-D5E6-44DD-92C4-14E50EF259D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E75346-D5E6-44DD-92C4-14E50EF259D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E75346-D5E6-44DD-92C4-14E50EF259D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E75346-D5E6-44DD-92C4-14E50EF259D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13FAE056-A2C9-4E4C-8D83-18E0DDAB9AB6}
+	EndGlobalSection
+EndGlobal
