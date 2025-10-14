@@ -54,7 +54,7 @@
             tbOriginal.Multiline = true;
             tbOriginal.Name = "tbOriginal";
             tbOriginal.Size = new Size(158, 263);
-            tbOriginal.TabIndex = 1;
+            tbOriginal.TabIndex = 4;
             tbOriginal.TextChanged += tbOriginal_TextChanged;
             // 
             // label1

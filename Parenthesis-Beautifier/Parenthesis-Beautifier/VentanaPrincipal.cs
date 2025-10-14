@@ -15,7 +15,9 @@ namespace Parenthesis_Beautifier
 
         private void VentanaPrincipal_Load(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = tabPage2;
+            tabControl1.SelectedTab = tabPage3;
+            tbOriginal.Select();
+            tbOriginal.Text = "funcion(funcion(x))";
         }
 
         private void btnCopiar_Click(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace Parenthesis_Beautifier
             for (int i = 0; i < textoO.Length; i++)
             {
                 resultado += textoO[i];
-
+                    
                 if (textoO[i] == '(')
                 {
                     //if (textoO.Length - i > 1 && textoO[i + 1] != ')')
@@ -62,7 +64,11 @@ namespace Parenthesis_Beautifier
                 if (textoO[i] == ')')
                 {
                     profundidad--;
+                    resultado = resultado.Remove(resultado.Length - 1);
                     resultado += "\r\n";
+                    for (int j = 0; j < profundidad; j++)
+                        resultado += "    ";
+                    resultado += textoO[i];
                 }
 
 
