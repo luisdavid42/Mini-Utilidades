@@ -1,3 +1,4 @@
+using System.ComponentModel.Design;
 using System.Xml.Linq;
 
 namespace Parenthesis_Beautifier
@@ -15,7 +16,7 @@ namespace Parenthesis_Beautifier
 
         private void VentanaPrincipal_Load(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = tabPage3;
+            tabControl1.SelectedTab = tabPage1;
             tbOriginal.Select();
             tbOriginal.Text = "funcion(funcion(x))";
         }
@@ -46,11 +47,15 @@ namespace Parenthesis_Beautifier
             for (int i = 0; i < textoO.Length; i++)
             {
                 resultado += textoO[i];
-                    
+
                 if (textoO[i] == '(')
                 {
-                    //if (textoO.Length - i > 1 && textoO[i + 1] != ')')
-                    //    break;
+                    
+                    if (textoO.Length - i > 1 && textoO[i + 1] == ')')
+                        continue;
+
+                    //if(parentesisVacio)
+
 
                     profundidad++;
                     resultado += "\r\n";
@@ -63,6 +68,11 @@ namespace Parenthesis_Beautifier
 
                 if (textoO[i] == ')')
                 {
+                    if (i-1 >= 0 && textoO[i-1] == '(')
+                    {
+                        continue;
+                    }
+
                     profundidad--;
                     resultado = resultado.Remove(resultado.Length - 1);
                     resultado += "\r\n";
@@ -91,26 +101,59 @@ namespace Parenthesis_Beautifier
 
                 if (textoO[i] == '(')
                 {
-                    profundidad++;
+                    
                     literales.Add(new Literal(profundidad, nuevoLiteral,literales.Count+1));
+                    profundidad++;
                     nuevoLiteral = "";
 
 
                     //nuevoLiteral += "\r\n";
 
-                    //for (int j = 0; j < profundidad; j++)
-                    //    nuevoLiteral += "    ";
+                    for (int j = 0; j < profundidad; j++)
+                        nuevoLiteral += "    ";
 
 
                 }
 
+
+
                 if (textoO[i] == ')')
                 {
-                    literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
-                    nuevoLiteral = "";
+                    if(textoO[i-1] != '(' && textoO[i-1] != ')')
+                    {
+                        nuevoLiteral = nuevoLiteral.Remove(nuevoLiteral.Length - 1);
+                        literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
 
-                    profundidad--;
-                    //nuevoLiteral += "\r\n";
+                        profundidad--;
+
+                        nuevoLiteral = "";
+                        for (int j = 0; j < profundidad; j++)
+                            nuevoLiteral += "    ";
+                        nuevoLiteral += textoO[i];
+
+                        literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+                        nuevoLiteral = "";
+                    }
+                    else if(textoO[i - 1] != '(')
+                    {
+                        nuevoLiteral += textoO[i];
+                    }
+                    else
+                    {
+                        //nuevoLiteral = nuevoLiteral.Remove(nuevoLiteral.Length - 1);
+                        //literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+
+                        //profundidad--;
+
+                        nuevoLiteral = "";
+                        for (int j = 0; j < profundidad; j++)
+                            nuevoLiteral += "    ";
+                        nuevoLiteral += textoO[i];
+
+                        literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+                        nuevoLiteral = "";
+                    }
+                    
                 }
 
 
@@ -120,9 +163,11 @@ namespace Parenthesis_Beautifier
             tablaResultado.Rows.Clear();
             foreach (Literal literal in literales)
             {
-                tablaResultado.Rows.Add(literal.profunidad, literal.texto);
+                tablaResultado.Rows.Add(literal.profundidad, literal.texto);
             }
             tablaResultado.ClearSelection();
+
+            return nuevoLiteral;
 
             //Renderizando
             string idPadre = "";
@@ -144,19 +189,19 @@ namespace Parenthesis_Beautifier
                 }
                 else
                 {
-                    if (profundidad == literal.profunidad)//es un hermano
+                    if (profundidad == literal.profundidad)//es un hermano
                     {
                         arbolLiterales.Nodes[idPadre].Nodes.Add(literal.id.ToString(), literal.texto);
                         idHijo = literal.id.ToString();
                     }
-                    else if(profundidad > literal.profunidad)//es un hijo
+                    else if(profundidad > literal.profundidad)//es un hijo
                     {
                         arbolLiterales.Nodes[idHijo].Nodes.Add(literal.id.ToString(), literal.texto);
                         idPadre = idHijo;
                         idHijo = literal.id.ToString();
                         profundidad++;
                     }
-                    else if (profundidad < literal.profunidad)//es un tio
+                    else if (profundidad < literal.profundidad)//es un tio
                     {
 
                     }
