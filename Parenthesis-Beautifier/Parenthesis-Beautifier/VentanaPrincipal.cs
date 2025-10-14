@@ -40,9 +40,6 @@ namespace Parenthesis_Beautifier
             string resultado = "";
             int profundidad = 0;
 
-            //resultado = textoO;
-            //resultado = textoO.Replace("(", "(" + "\r\n");
-
 
             for (int i = 0; i < textoO.Length; i++)
             {
@@ -69,9 +66,7 @@ namespace Parenthesis_Beautifier
                 if (textoO[i] == ')')
                 {
                     if (i-1 >= 0 && textoO[i-1] == '(')
-                    {
                         continue;
-                    }
 
                     profundidad--;
                     resultado = resultado.Remove(resultado.Length - 1);
@@ -101,7 +96,9 @@ namespace Parenthesis_Beautifier
 
                 if (textoO[i] == '(')
                 {
-                    
+                    if (textoO.Length - i > 1 && textoO[i + 1] == ')')
+                        continue;
+
                     literales.Add(new Literal(profundidad, nuevoLiteral,literales.Count+1));
                     profundidad++;
                     nuevoLiteral = "";
@@ -119,40 +116,45 @@ namespace Parenthesis_Beautifier
 
                 if (textoO[i] == ')')
                 {
-                    if(textoO[i-1] != '(' && textoO[i-1] != ')')
+                    if (i - 1 >= 0 && textoO[i - 1] == '(')
                     {
                         nuevoLiteral = nuevoLiteral.Remove(nuevoLiteral.Length - 1);
                         literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
-
-                        profundidad--;
-
-                        nuevoLiteral = "";
-                        for (int j = 0; j < profundidad; j++)
-                            nuevoLiteral += "    ";
-                        nuevoLiteral += textoO[i];
-
-                        literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
-                        nuevoLiteral = "";
+                        continue;
                     }
-                    else if(textoO[i - 1] != '(')
-                    {
-                        nuevoLiteral += textoO[i];
-                    }
-                    else
-                    {
-                        //nuevoLiteral = nuevoLiteral.Remove(nuevoLiteral.Length - 1);
-                        //literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+                            
 
-                        //profundidad--;
+                    nuevoLiteral = nuevoLiteral.Remove(nuevoLiteral.Length - 1);
+                    literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
 
-                        nuevoLiteral = "";
-                        for (int j = 0; j < profundidad; j++)
-                            nuevoLiteral += "    ";
-                        nuevoLiteral += textoO[i];
+                    profundidad--;
 
-                        literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
-                        nuevoLiteral = "";
-                    }
+                    nuevoLiteral = "";
+                    for (int j = 0; j < profundidad; j++)
+                        nuevoLiteral += "    ";
+                    nuevoLiteral += textoO[i];
+
+                    literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+                    nuevoLiteral = "";
+                    //else if(textoO[i - 1] != '(')
+                    //{
+                    //    nuevoLiteral += textoO[i];
+                    //}
+                    //else
+                    //{
+                    //    //nuevoLiteral = nuevoLiteral.Remove(nuevoLiteral.Length - 1);
+                    //    //literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+
+                    //    //profundidad--;
+
+                    //    nuevoLiteral = "";
+                    //    for (int j = 0; j < profundidad; j++)
+                    //        nuevoLiteral += "    ";
+                    //    nuevoLiteral += textoO[i];
+
+                    //    literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+                    //    nuevoLiteral = "";
+                    //}
                     
                 }
 
