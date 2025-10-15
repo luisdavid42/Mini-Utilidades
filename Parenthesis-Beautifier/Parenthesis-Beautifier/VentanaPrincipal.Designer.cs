@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             tbOriginal = new TextBox();
             label1 = new Label();
             label2 = new Label();
             tbResultado = new TextBox();
             tablaResultado = new DataGridView();
-            colProfundidad = new DataGridViewTextBoxColumn();
-            colLiteral = new DataGridViewTextBoxColumn();
             arbolLiterales = new TreeView();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
+            colProfundidad = new DataGridViewTextBoxColumn();
+            colLiteral = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)tablaResultado).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
@@ -88,24 +89,18 @@
             // 
             tablaResultado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             tablaResultado.Columns.AddRange(new DataGridViewColumn[] { colProfundidad, colLiteral });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Window;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            tablaResultado.DefaultCellStyle = dataGridViewCellStyle3;
             tablaResultado.Location = new Point(25, 15);
             tablaResultado.Name = "tablaResultado";
             tablaResultado.Size = new Size(273, 208);
             tablaResultado.TabIndex = 5;
-            // 
-            // colProfundidad
-            // 
-            colProfundidad.HeaderText = "P";
-            colProfundidad.Name = "colProfundidad";
-            colProfundidad.ReadOnly = true;
-            colProfundidad.Width = 30;
-            // 
-            // colLiteral
-            // 
-            colLiteral.HeaderText = "Literal";
-            colLiteral.Name = "colLiteral";
-            colLiteral.ReadOnly = true;
-            colLiteral.Width = 200;
             // 
             // arbolLiterales
             // 
@@ -158,6 +153,20 @@
             tabPage3.Text = "Texto";
             tabPage3.UseVisualStyleBackColor = true;
             // 
+            // colProfundidad
+            // 
+            colProfundidad.HeaderText = "P";
+            colProfundidad.Name = "colProfundidad";
+            colProfundidad.ReadOnly = true;
+            colProfundidad.Width = 39;
+            // 
+            // colLiteral
+            // 
+            colLiteral.HeaderText = "Literal";
+            colLiteral.Name = "colLiteral";
+            colLiteral.ReadOnly = true;
+            colLiteral.Width = 250;
+            // 
             // VentanaPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -187,12 +196,12 @@
         private Label label2;
         private TextBox tbResultado;
         private DataGridView tablaResultado;
-        private DataGridViewTextBoxColumn colProfundidad;
-        private DataGridViewTextBoxColumn colLiteral;
         private TreeView arbolLiterales;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TabPage tabPage3;
+        private DataGridViewTextBoxColumn colProfundidad;
+        private DataGridViewTextBoxColumn colLiteral;
     }
 }

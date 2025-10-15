@@ -125,41 +125,27 @@ namespace Parenthesis_Beautifier
                             
 
                     nuevoLiteral = nuevoLiteral.Remove(nuevoLiteral.Length - 1);
-                    literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+                    if(nuevoLiteral.Trim().Length > 0)
+                        literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
+                    nuevoLiteral = "";
 
                     profundidad--;
 
-                    nuevoLiteral = "";
+                    
                     for (int j = 0; j < profundidad; j++)
                         nuevoLiteral += "    ";
                     nuevoLiteral += textoO[i];
 
                     literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
                     nuevoLiteral = "";
-                    //else if(textoO[i - 1] != '(')
-                    //{
-                    //    nuevoLiteral += textoO[i];
-                    //}
-                    //else
-                    //{
-                    //    //nuevoLiteral = nuevoLiteral.Remove(nuevoLiteral.Length - 1);
-                    //    //literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
-
-                    //    //profundidad--;
-
-                    //    nuevoLiteral = "";
-                    //    for (int j = 0; j < profundidad; j++)
-                    //        nuevoLiteral += "    ";
-                    //    nuevoLiteral += textoO[i];
-
-                    //    literales.Add(new Literal(profundidad, nuevoLiteral, literales.Count + 1));
-                    //    nuevoLiteral = "";
-                    //}
                     
                 }
 
-
+                
             }
+
+            if(nuevoLiteral != "")
+                literales.Add(new Literal(0, nuevoLiteral, literales.Count + 1));
 
             //Renderizando
             tablaResultado.Rows.Clear();
