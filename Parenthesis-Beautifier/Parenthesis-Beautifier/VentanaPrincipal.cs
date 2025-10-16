@@ -81,7 +81,7 @@ namespace Parenthesis_Beautifier
             return resultado;
         }
 
-        string ponerBonito2(String textoO)
+        void ponerBonito2(String textoO)
         {
             literales = new List<Literal>();
             string nuevoLiteral = "";
@@ -155,6 +155,15 @@ namespace Parenthesis_Beautifier
             if(nuevoLiteral != "")
                 literales.Add(new Literal(0, nuevoLiteral, literales.Count + 1));
 
+
+
+
+
+
+
+
+
+
             //Renderizando
             tablaResultado.Rows.Clear();
             foreach (Literal literal in literales)
@@ -163,52 +172,64 @@ namespace Parenthesis_Beautifier
             }
             tablaResultado.ClearSelection();
 
-            return nuevoLiteral;
+            //return;
+
+
+
+
+
+
+
 
             //Renderizando
             string idPadre = "";
             string idHijo = "";
-            arbolLiterales.Nodes.Clear();
+            gui_arbolLiterales.Nodes.Clear();
+            profundidad = 0;
+
+            ArbolLiterales arbol = new ArbolLiterales();
 
             foreach (Literal literal in literales)
             {
-                if(idPadre == "")//nodos de primer nivel
-                {
-                    arbolLiterales.Nodes.Add(literal.id.ToString(), literal.texto);
-                    idPadre = literal.id.ToString();
-                }
-                else if(idHijo == "")//
-                {
-                    arbolLiterales.Nodes[idPadre].Nodes.Add(literal.id.ToString(), literal.texto);
-                    idHijo = literal.id.ToString();
-                    profundidad++;
-                }
-                else
-                {
-                    if (profundidad == literal.profundidad)//es un hermano
-                    {
-                        arbolLiterales.Nodes[idPadre].Nodes.Add(literal.id.ToString(), literal.texto);
-                        idHijo = literal.id.ToString();
-                    }
-                    else if(profundidad > literal.profundidad)//es un hijo
-                    {
-                        arbolLiterales.Nodes[idHijo].Nodes.Add(literal.id.ToString(), literal.texto);
-                        idPadre = idHijo;
-                        idHijo = literal.id.ToString();
-                        profundidad++;
-                    }
-                    else if (profundidad < literal.profundidad)//es un tio
-                    {
+                arbol.AgregarHoja(literal);
 
-                    }
+                //if(idPadre == "")//nodos de primer nivel
+                //{
+                //    arbolLiterales.Nodes.Add(literal.id.ToString(), literal.texto);
+                //    idPadre = literal.id.ToString();
+                //}
+                //else if(idHijo == "")//si es un padre pero aun no tiene hijos
+                //{
+                //    arbolLiterales.Nodes[idPadre].Nodes.Add(literal.id.ToString(), literal.texto);
+                //    idHijo = literal.id.ToString();
+                //    profundidad++;
+                //}
+                //else
+                //{
+                //    if (profundidad == literal.profundidad)//es un hermano
+                //    {
+                //        arbolLiterales.Nodes[idPadre].Nodes.Add(literal.id.ToString(), literal.texto);
+                //        idHijo = literal.id.ToString();
+                //    }
+                //    else if(profundidad > literal.profundidad)//es un hijo
+                //    {
+                //        arbolLiterales.Nodes[idHijo].Nodes.Add(literal.id.ToString(), literal.texto);
+                //        idPadre = idHijo;
+                //        idHijo = literal.id.ToString();
+                //        profundidad++;
+                //    }
+                //    else if (profundidad < literal.profundidad)//es un tio
+                //    {
+
+                //        profundidad--;
+                //    }
                     
-                }
+                //}
             }
 
             //TreeNode
-            arbolLiterales.ExpandAll();
+            gui_arbolLiterales.ExpandAll();
 
-            return nuevoLiteral;
         }
     }
 }

@@ -34,7 +34,7 @@
             label2 = new Label();
             tbResultado = new TextBox();
             tablaResultado = new DataGridView();
-            arbolLiterales = new TreeView();
+            gui_arbolLiterales = new TreeView();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
@@ -108,10 +108,10 @@
             // 
             // arbolLiterales
             // 
-            arbolLiterales.Location = new Point(18, 25);
-            arbolLiterales.Name = "arbolLiterales";
-            arbolLiterales.Size = new Size(345, 449);
-            arbolLiterales.TabIndex = 6;
+            gui_arbolLiterales.Location = new Point(18, 25);
+            gui_arbolLiterales.Name = "arbolLiterales";
+            gui_arbolLiterales.Size = new Size(345, 449);
+            gui_arbolLiterales.TabIndex = 6;
             // 
             // tabControl1
             // 
@@ -137,7 +137,7 @@
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(arbolLiterales);
+            tabPage2.Controls.Add(gui_arbolLiterales);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -200,7 +200,7 @@
         private Label label2;
         private TextBox tbResultado;
         private DataGridView tablaResultado;
-        private TreeView arbolLiterales;
+        private TreeView gui_arbolLiterales;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
