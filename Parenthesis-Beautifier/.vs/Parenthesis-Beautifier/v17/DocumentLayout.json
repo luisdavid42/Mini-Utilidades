@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{F6FE5042-16CB-441C-BD29-AC6381EA9999}|Parenthesis-Beautifier\\Parenthesis-Beautifier.csproj|solutionrelative:parenthesis-beautifier\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6FE5042-16CB-441C-BD29-AC6381EA9999}|Parenthesis-Beautifier\\Parenthesis-Beautifier.csproj|c:\\users\\liu\\documents\\github\\mini-utilidades\\parenthesis-beautifier\\parenthesis-beautifier\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6FE5042-16CB-441C-BD29-AC6381EA9999}|Parenthesis-Beautifier\\Parenthesis-Beautifier.csproj|solutionrelative:parenthesis-beautifier\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F6FE5042-16CB-441C-BD29-AC6381EA9999}|Parenthesis-Beautifier\\Parenthesis-Beautifier.csproj|c:\\users\\liu\\documents\\github\\mini-utilidades\\parenthesis-beautifier\\parenthesis-beautifier\\literal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6FE5042-16CB-441C-BD29-AC6381EA9999}|Parenthesis-Beautifier\\Parenthesis-Beautifier.csproj|solutionrelative:parenthesis-beautifier\\literal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FE5042-16CB-441C-BD29-AC6381EA9999}|Parenthesis-Beautifier\\Parenthesis-Beautifier.csproj|c:\\users\\liu\\documents\\github\\mini-utilidades\\parenthesis-beautifier\\parenthesis-beautifier\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FE5042-16CB-441C-BD29-AC6381EA9999}|Parenthesis-Beautifier\\Parenthesis-Beautifier.csproj|solutionrelative:parenthesis-beautifier\\ventanaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Literal.cs",
+              "DocumentMoniker": "C:\\Users\\Liu\\Documents\\GitHub\\Mini-Utilidades\\Parenthesis-Beautifier\\Parenthesis-Beautifier\\Literal.cs",
+              "RelativeDocumentMoniker": "Parenthesis-Beautifier\\Literal.cs",
+              "ToolTip": "C:\\Users\\Liu\\Documents\\GitHub\\Mini-Utilidades\\Parenthesis-Beautifier\\Parenthesis-Beautifier\\Literal.cs",
+              "RelativeToolTip": "Parenthesis-Beautifier\\Literal.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAUwB4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T14:50:49.916Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -39,24 +52,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Literal.cs",
-              "DocumentMoniker": "C:\\Users\\Liu\\Documents\\GitHub\\Mini-Utilidades\\Parenthesis-Beautifier\\Parenthesis-Beautifier\\Literal.cs",
-              "RelativeDocumentMoniker": "Parenthesis-Beautifier\\Literal.cs",
-              "ToolTip": "C:\\Users\\Liu\\Documents\\GitHub\\Mini-Utilidades\\Parenthesis-Beautifier\\Parenthesis-Beautifier\\Literal.cs",
-              "RelativeToolTip": "Parenthesis-Beautifier\\Literal.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA2wB4AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T14:50:49.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "VentanaPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\Liu\\Documents\\GitHub\\Mini-Utilidades\\Parenthesis-Beautifier\\Parenthesis-Beautifier\\VentanaPrincipal.cs",
               "RelativeDocumentMoniker": "Parenthesis-Beautifier\\VentanaPrincipal.cs",
               "ToolTip": "C:\\Users\\Liu\\Documents\\GitHub\\Mini-Utilidades\\Parenthesis-Beautifier\\Parenthesis-Beautifier\\VentanaPrincipal.cs",
               "RelativeToolTip": "Parenthesis-Beautifier\\VentanaPrincipal.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAQwJIAAAAhAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAYwBQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T18:31:09.713Z",
               "EditorCaption": ""

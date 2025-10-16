@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Parenthesis-Beautifier")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22307caa9b5ebbf639bfabcff6fb114faacc29d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4da2f397ee4c930ad54199ae1b1cd35e5a07a7bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Parenthesis-Beautifier")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Parenthesis-Beautifier")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
